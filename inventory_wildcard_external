@@ -94,12 +94,12 @@ openshift_docker_hosted_registry_insecure=true
 openshift_master_api_port=8443
 openshift_master_console_port=8443
 
-#Default:  openshift_master_cluster_method=native
+#default:  openshift_master_cluster_method=native
 # Internal cluster name
-openshift_master_cluster_hostname=master.techmogun.local
+openshift_master_cluster_hostname=3.21.44.55
 
 # NOTE: Default wildcard domain for applications
-openshift_master_default_subdomain=apps.master.192.168.10.5.xip.io
+openshift_master_default_subdomain=apps.master.3.21.44.55.xip.io
 
 ###########################################################################
 ### OpenShift Network Vars
@@ -172,17 +172,17 @@ etcd
 nodes
 
 [nfs]
-master.techmogun.local
+3.21.44.55
 [masters]
-master.techmogun.local
+3.21.44.55
 
 [etcd]
-master.techmogun.local
+3.21.44.55
 
 [nodes]
 ## All-In-One with CRI-O
 #ocp.example.com openshift_node_group_name='node-config-all-in-one-crio' openshift_node_problem_detector_install=true
-master.techmogun.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
+3.21.44.55 openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
 
 #
 # END OF FILE
